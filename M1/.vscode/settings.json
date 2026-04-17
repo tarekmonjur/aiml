@@ -1,0 +1,39 @@
+{
+  // ─── Python Formatting (Black + isort) ───
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [79, 120]
+  },
+
+  // Black formatter settings
+  "black-formatter.args": [
+    "--line-length", "79"
+  ],
+
+  // isort (import sorting) settings
+  "isort.args": [
+    "--profile", "black"
+  ],
+
+  // ─── Python Linting ───
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+
+  // ─── Python Indent (KevinRose.vsc-python-indent) ───
+  "pythonIndent.useTabOnHangingIndent": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "pythonIndent.keepHangingBracketOnLine": false,
+
+  // ─── Editor Defaults ───
+  "editor.wordWrap": "off",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true
+}
