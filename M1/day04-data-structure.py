@@ -222,6 +222,10 @@ print(my_dict)  # Output: {}
 
 print("-" * 100)
 
+fruits_dist = {"apple": 10, "banana": 20, "cherry": 15}
+label_to_key = {label: key for key, label in fruits_dist.items()}  # creates a new dictionary where the keys are the labels from fruits_dist and the values are their corresponding indices
+print(label_to_key)  # Output: {'apple': 0, 'banana': 1, 'cherry': 2}
+
 
 # ------------------ Data Structure Summary Table -----------------
 # | Data Structure | Ordered | Mutable | Allow Duplicates | Indexing/Slicing | Syntax Example |
